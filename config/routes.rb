@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'translate/diploma'
 
   get 'welcome/index'
-  root 'welcome#index'
+  root 'translate#diploma'
 
 
 
