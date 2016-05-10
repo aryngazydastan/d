@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diploma</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class='container' style='width: 700px;'>
+	<div class='row' style='padding-top: 5px;'>
+		<div class='col-md-1'><%= image_tag("logo.png", :size => "35x50") %></div>
+		<div class='col-md-3' style='padding-top: 15px;'><b><%= link_to 'Дипломные работы', translate_diploma_path %></b></div>
+		<div class='col-md-1' style='padding-top: 13px;padding-left: 150px;'><%= image_tag("contact.png", :size => "25x25") %></div>
+		<div class='col-md-3' style='padding-top: 15px;'><b>+7 775 7721688</b></div>
+	</div>
+</div>
+
+<div class='container' style='width: 700px; padding-top: 5px;'>
+	<div class='row' style='padding-top: 5px;'>
+		<div class='col-md-3'><h6><b><%= link_to 'Перевод дипломной работы', translate_diploma_path %></b></h6></a></div>
+		<div class='col-md-3'><h6><b><%= link_to 'Разработка дипломной работы', create_diploma_path %></b></h6></a></div>
+		<div class='col-md-3'><h6><b><%= link_to 'Презентация дипломной работы', show_diploma_path %></b></h6></div>
+	</div>
+</div>
+
+<%= yield %>
+
+<div class='container' style='width: 700px; padding-top: 5px;'>
+	<div class='row' style='padding-top: 5px;'>
+		<div style='width: 500px; padding-top: 3px; padding-left: 10px;'><h6><b>Cо стороны разработчиков в обязательном порядке сообщается уведолмение об изменении(ях)</b></h6></div>
+	</div>
+</div>
+
+</body>
+</html>
